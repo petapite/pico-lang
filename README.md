@@ -11,41 +11,34 @@ This JavaScript code is then executed on an embedded JavaScript machine.
 ## Syntax Highlighting
 Sol now has a VS Code extension! (Warning: there are a ton of extensions that appear if you write Sol or Sol Tools, so instead write this (FOR NOW): publisher:"Joshua Colell")
 
-### Why not write JavaScript?
+### Why use Sol?
 
-JavaScript is also a great language for scripting. By writing a language on top of JavaScript, we can take advantage of it's more powerful features such as promises, async/await without having to implement it from scratch. The QuickJS engine is also incredibly lightweight and fast enough for 99% of use-cases.
+Sol is still not yet complete, but you could help making this programming language an actual thing! So why not use it? It's a simple language to understand with a bunch of examples.
 
-## Example
+### How do I compile Sol?
+
+So I made an effort to make a python script to make the compiling process easier. You only need Python and Rust installed, the script would to the rest! It is going to ask you for admin privilages (on Windows) or root (on Linux or Mac). Some dependencies in Sol need admin/root to compile (like rquickjs). After compiling the project, you can start making changes to the project! Just making a pull request helps me develop this project faster.
+
+## Here's an example:
 
 ```rust
-fn fib(n) {
-    if n < 2 {
-        return n
-    }
-
-    return fib(n - 1) + fib(n - 2)
+fn hello(keyword) {
+    println("Hello, " + keyword + "!")
 }
 
-println(fib(27)) // -> 196418
+hello("World")
 ```
 
 #### Ok so... where do I start?
-### You can start of from the Wiki!
-
-## Limitations
-
-During testing and development, these are some of the limitations I have found so far:
-
-> A checked box marks the limitation as resolved or fixed.
-
-- [x] A recursive `fib(n)` function that exceeds `fib(27)` causes a runtime stack-overflow. Realistically, nobody is going to be using this much recursion but it's normally a good benchmark for raw recursive performance.
+### You can start of from the (non-existing) Documentation!
 
 ## TODO
 
 > This is the list of things I needed (and want) to add to Sol:
 
-TODO | WIP | Implemented | Released in latest version
+TODO | WIP | Implemented | Released in latest release
 :------------ | :-------------| :-------------| :-------------
 Built-In Modules | ✔️ | ✔️ | ✔️
+Build script | ✔️ | ✔️ | ✔️
 Comments | ✔️ |  ❌ | ❌
 Package Manager & Custom Modules | ✔️ |  ❌ | ❌
