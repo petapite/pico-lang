@@ -1,0 +1,10 @@
+[package]
+name = "sol-compiler"
+version = "0.3.0"
+edition = "2021"
+description = "The Sol Programming Language JavaScript Compiler"
+license = "MIT"
+
+[dependencies]
+sol-parser = { path = "../sol-parser", version = "0.3.0" }
+sol-js-builder = { path = "../sol-js-builder", version = "0.3.0" }

@@ -1,0 +1,6 @@
+[package]
+edition = "2021"
+name = "sol-parser"
+version = "0.3.0"
+description = "The Sol Programming Language Parser"
+license = "MIT"

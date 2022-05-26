@@ -1,0 +1,46 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "Sol",
+	"patterns": [
+		{
+			"include": "#keywords"
+		},
+		{
+			"include": "#strings"
+		}
+	],
+	"repository": {
+		"keywords": {
+			"patterns": [
+				{
+					"name": "keyword.control.sol",
+					"match": "\\b(if|else|while|return|break|continue|fn|let)\\b"
+				},
+				{
+					"name": "constant.language.sol",
+					"match": "\\b(true|false)\\b"
+				},
+				{
+					"name": "keyword.operator.sol",
+					"match": "(=>)|(->)|[-:=*!.+|%/<>;]"
+				},
+				{
+					"name": "entity.name",
+					"match": "[$a-zA-Z_]+"
+				}
+			]
+		},
+		"strings": {
+			"name": "string.quoted.double.sol",
+			"begin": "\"",
+			"end": "\"",
+			"patterns": [
+				{
+					"name": "constant.character.escape.sol",
+					"match": "\\\\."
+				}
+			]
+		}
+	},
+	"scopeName": "source.sol"
+}

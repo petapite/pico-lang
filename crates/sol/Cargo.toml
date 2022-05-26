@@ -1,0 +1,17 @@
+[package]
+name = "sol"
+version = "0.3.0"
+edition = "2021"
+description = "The Sol Programming Language"
+license = "MIT"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+sol-compiler = { path = "../sol-compiler", version = "0.3.0" }
+rquickjs = { version = "0.1.5", features = ["macro", "classes", "doc-cfg", "loader"] }
+structopt = "0.3.26"
+rustyline = "9.0.0"
+uuid = { version = "1.0.0", features = ["v4"] }
+tiny_http = "0.11.0"
+rand = "0.8.5"

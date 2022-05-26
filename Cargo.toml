@@ -1,0 +1,10 @@
+[workspace]
+members = [
+    "crates/sol-parser",
+    "crates/sol-compiler",
+    "crates/sol-js-builder",
+    "crates/sol"
+]
+
+[profile.release]
+debug = false

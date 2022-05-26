@@ -1,0 +1,18 @@
+{
+    "Sol Function Definition": {
+		"prefix": "sfn",
+		"body": [
+			"fn $1($2) {",
+			"    $3",
+			"}"
+		],
+		"description": "Create a new function definition."
+	},
+	"Sol Variable Declaration": {
+		"prefix": "sld",
+		"body": [
+			"let $1 = $2"
+		],
+		"description": "Create a new variable declaration."
+	}
+}

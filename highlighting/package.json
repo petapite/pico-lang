@@ -1,0 +1,33 @@
+{
+    "name": "sol-sh",
+    "displayName": "Sol Tools",
+    "description": "Adds support for the Sol programming language.",
+    "version": "1.0.0",
+    "publisher": "JoshuaColell",
+    "repository": "https://www.github.com/JoshuaColell/sol",
+    "engines": {
+        "vscode": "^1.62.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "sol",
+            "aliases": ["Sol", "sol"],
+            "extensions": [".sol"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "sol",
+            "scopeName": "source.sol",
+            "path": "./syntaxes/sol.tmLanguage.json"
+        }],
+        "snippets": [
+            {
+                "language": "sol",
+                "path": "./snippets.json"
+            }
+        ]
+    }
+}

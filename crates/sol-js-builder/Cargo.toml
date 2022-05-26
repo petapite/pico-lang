@@ -1,0 +1,6 @@
+[package]
+name = "sol-js-builder"
+version = "0.3.0"
+edition = "2021"
+description = "The Sol Programming Language JavaScript Builder"
+license = "MIT"
