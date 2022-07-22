@@ -2,6 +2,15 @@
 
 A dynamically-typed (for now) and procedural programming language.
 
+## Update !!!!!!!!!!!!!
+Sol is going to have a ***HUGE*** re-design, but this means it's to be dead for a while. I'm currently working in [picopite](https://github.com/JoshuaColell/picopite/)! It's an operating system built from the ground up, and yes, that means I'm creating my own kernel for it. (Of course, it's gonna have linux support)
+
+I'm also planning to make Sol a big language, that also means I'm using Sol in picopite!
+
+***Current picopite state:*** *Early Stage*
+
+Bye, for now, Sol :wave:
+
 ## About
 
 Sol is a lightweight language primarily designed for scripting environments. It uses a compile-to-JS approach at runtime, converting all Sol source-code into readable JavaScript code. (Bet you didn't see that coming >:D)
